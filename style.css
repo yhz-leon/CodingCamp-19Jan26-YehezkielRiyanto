@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: hsl(218, 10%, 21%);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    color:#eae7eb;
+    flex-direction: column;
+
+}
+
+header {
+    background-color: #020617;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #1e293b;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+main {
+    flex: 1;
+    max-width: 500px;
+    width: 100%;
+    margin: 30px auto;
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius:12px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+form input, form button {
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+}
+
+form input [type="text"], form input [type="date"] {
+    flex: 1;
+    background-color: #020617;
+    color: #e5e7eb;
+    border: 1px solid #334155
+}
+
+form button {
+    background-color: #6366f1;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+form button:hover {
+    background-color: #4f465e;
+}
+
+.filter{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.filter label {
+    font-size: 16px;
+    color: #cbd5f5;
+}
+
+.filter select{
+    padding: 8px;
+    border-radius: 6px;
+    background-color: #020617;
+    color: #e5e7eb;
+    border: 1px solid #334155;
+}
+
+#todoList {
+    list-style: none;
+}
+
+#todoList Li {
+    background-color: #020617;
+    padding: 12 px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #334155;
+}
+
+footer {
+    font-size: 14px;
+    background-color: #020617;
+    text-align: center;
+    color: #94a3b8;
+    border-top: 1px solid #1e293b;
+}
